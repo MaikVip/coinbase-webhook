@@ -17,7 +17,7 @@ def grant_telegram_access(user_id):
     # Füge hier die Telegram-API ein, um Zugriff zu gewähren
     pass
 
-@app.route("/coinbase_webhook", methods=["POST"])
+@app.route("/weipay-webhooks", methods=["POST"])
 def handle_webhook():
     payload = request.data
     signature = request.headers.get("X-CC-Webhook-Signature", "")
